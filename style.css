@@ -1,0 +1,305 @@
+/* Reset simples para padronizar a aparência do site */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fb;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+.topo {
+    width: 100%;
+    background-color: #111827;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.menu {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 18px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.links-menu {
+    display: flex;
+    gap: 22px;
+    list-style: none;
+}
+
+.links-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.links-menu a:hover {
+    color: #60a5fa;
+}
+
+.botao-menu {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 24px;
+    background: linear-gradient(135deg, #111827, #1d4ed8);
+    color: white;
+    text-align: center;
+}
+
+.hero-texto {
+    max-width: 850px;
+}
+
+.destaque {
+    color: #bfdbfe;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 28px;
+}
+
+.botao-principal {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #1d4ed8;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.botao-principal:hover {
+    transform: translateY(-2px);
+    background-color: #dbeafe;
+}
+
+.secao {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px 24px;
+}
+
+.secao-clara {
+    background-color: #ffffff;
+    max-width: 100%;
+}
+
+.secao-clara > h2,
+.secao-clara > p,
+.secao-clara > ul,
+.secao-clara > form {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.secao h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+.secao p {
+    margin-bottom: 16px;
+    font-size: 17px;
+}
+
+.cards {
+    margin-top: 28px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.card,
+.projeto {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+}
+
+.card h3,
+.projeto h3 {
+    color: #1d4ed8;
+    margin-bottom: 10px;
+}
+
+.lista {
+    margin-top: 20px;
+    padding-left: 22px;
+    font-size: 17px;
+}
+
+.lista li {
+    margin-bottom: 10px;
+}
+
+.links-projeto {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.links-projeto a {
+    background-color: #1d4ed8;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.links-projeto a:hover {
+    background-color: #1e40af;
+}
+
+.observacao {
+    margin-top: 18px;
+    font-size: 14px;
+    color: #4b5563;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #f8fafc;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+}
+
+.formulario label {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #1d4ed8;
+}
+
+.formulario button {
+    margin-top: 14px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1d4ed8;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #1e40af;
+}
+
+.mensagem-retorno {
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.sucesso {
+    color: #15803d;
+}
+
+.erro {
+    color: #b91c1c;
+}
+
+.rodape {
+    text-align: center;
+    padding: 22px;
+    background-color: #111827;
+    color: white;
+}
+
+/* Responsividade para celulares e tablets */
+@media (max-width: 768px) {
+    .botao-menu {
+        display: block;
+    }
+
+    .links-menu {
+        display: none;
+        position: absolute;
+        top: 64px;
+        right: 24px;
+        background-color: #111827;
+        flex-direction: column;
+        width: 210px;
+        padding: 18px;
+        border-radius: 8px;
+    }
+
+    .links-menu.ativo {
+        display: flex;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .secao {
+        padding: 55px 20px;
+    }
+}

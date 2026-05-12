@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Vinne Benatti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topo">
+        <nav class="menu">
+            <a href="#inicio" class="logo">Vinne Benatti</a>
+
+            <button class="botao-menu" id="botaoMenu" aria-label="Abrir menu">
+                ☰
+            </button>
+
+            <ul class="links-menu" id="linksMenu">
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-texto">
+                <p class="destaque">Portfólio pessoal</p>
+                <h1>Olá, eu sou Vinne Alberto Benatti Martins</h1>
+                <p>
+                    Estudante de Ciência da Computação, interessado em desenvolvimento backend,
+                    automação de rotinas e criação de soluções simples para problemas complexos.
+                </p>
+                <a href="#portfolio" class="botao-principal">Ver portfólio</a>
+            </div>
+        </section>
+
+        <section id="sobre" class="secao">
+            <h2>Sobre mim</h2>
+            <p>
+                Meu nome é Vinne Alberto Benatti Martins. Gosto muito de videogames, jogos online
+                e tecnologia. Também gosto de resolver problemas complexos de forma simples,
+                criando soluções que ajudem pessoas e otimizem rotinas do dia a dia.
+            </p>
+            <p>
+                Minha meta profissional é entrar para a área de desenvolvimento backend,
+                contribuindo para a construção de sistemas eficientes, bem estruturados e capazes
+                de facilitar processos existentes.
+            </p>
+
+            <div class="cards">
+                <article class="card">
+                    <h3>Interesses</h3>
+                    <p>Desenvolvimento backend, automação, banco de dados, antifraude e tecnologia.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Hobbies</h3>
+                    <p>Videogames, jogos online, estudos de tecnologia e criação de projetos pessoais.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Objetivo</h3>
+                    <p>Atuar como desenvolvedor backend, criando soluções úteis para problemas reais.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="formacao" class="secao secao-clara">
+            <h2>Formação</h2>
+            <p>
+                Atualmente estou cursando Bacharelado em Ciência da Computação, com foco no
+                desenvolvimento de uma base sólida em programação, lógica, banco de dados,
+                estrutura de dados, desenvolvimento web e engenharia de software.
+            </p>
+            <p>
+                Além da graduação, busco estudar programação, automação, bancos de dados e
+                desenvolvimento backend, com foco em criar soluções práticas para problemas reais.
+            </p>
+
+            <ul class="lista">
+                <li><strong>Curso:</strong> Bacharelado em Ciência da Computação</li>
+                <li><strong>Instituição:</strong> Centro Universitário Internacional UNINTER</li>
+                <li><strong>Disciplina:</strong> Desenvolvimento Web (860113)</li>
+                <li><strong>Áreas de interesse:</strong> Backend, Java, Python, PHP, SQL e automação</li>
+            </ul>
+        </section>
+
+        <section id="portfolio" class="secao">
+            <h2>Portfólio</h2>
+            <p>
+                Atualmente, grande parte dos meus projetos são privados por estarem relacionados
+                ao ambiente corporativo. No entanto, estou iniciando a organização do meu portfólio
+                público no GitHub.
+            </p>
+            <div class="projeto">
+                <h3>Fraud Keywords Config</h3>
+                <p>
+                    Projeto desenvolvido em Java com o objetivo de identificar combinações de palavras
+                    relacionadas a possíveis fraudes em mensagens de texto. A ferramenta permite
+                    cadastrar grupos de palavras-chave e transformar essas combinações em consultas
+                    para auxiliar no monitoramento automatizado.
+                </p>
+                <p>
+                    Quando uma combinação cadastrada é encontrada, o sistema pode auxiliar na geração
+                    de alertas internos, otimizando o tempo de análise e permitindo que a equipe foque
+                    em outras atividades importantes.
+                </p>
+
+                <div class="links-projeto">
+                    <a href="https://github.com/vinnebenatti/fraud-keywords-config" target="_blank">
+                        Acessar projeto no GitHub
+                    </a>                
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="secao secao-clara">
+            <h2>Contato</h2>
+            <p>
+                Preencha o formulário abaixo para simular o envio de uma mensagem.
+            </p>
+
+            <form id="formContato" class="formulario">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+
+                <button type="submit">Enviar mensagem</button>
+
+                <p id="mensagemRetorno" class="mensagem-retorno"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>© 2026 - Vinne Alberto Benatti Martins | Portfólio pessoal</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
