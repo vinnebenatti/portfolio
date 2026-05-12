@@ -27,7 +27,7 @@ formContato.addEventListener("submit", function (evento) {
     const mensagem = document.getElementById("mensagem").value.trim();
 
     // https://pt.stackoverflow.com/questions/1386/express%c3%a3o-regular-para-valida%c3%a7%c3%a3o-de-e-mail
-    const emailValido = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i;
+    const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (nome === "" || email === "" || mensagem === "") {
         mostrarMensagem("Por favor, preencha todos os campos.", "erro");
